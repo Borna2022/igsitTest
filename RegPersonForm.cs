@@ -43,6 +43,14 @@ namespace igsit
             da.Fill(ds,"T1");
             dataGridView1.DataBindings.Clear();
             dataGridView1.DataBindings.Add("Datasource", ds, "T1");
+            txtpersoncode.DataBindings.Clear();
+            txtpersoncode.DataBindings.Add("text", ds, "T1.fprs_personCode");
+            txtname.DataBindings.Clear();
+            txtname.DataBindings.Add("text", ds, "T1.fprs_Name");
+            txtlastname.DataBindings.Clear();
+            txtlastname.DataBindings.Add("text", ds, "T1.fprs_LastName");
+            txtvin.DataBindings.Clear();
+            txtvin.DataBindings.Add("text", ds, "T1.fprs_VinCode");
         }
     }
 }

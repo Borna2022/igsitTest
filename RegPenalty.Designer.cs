@@ -28,183 +28,192 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnnew = new System.Windows.Forms.Button();
+            this.btnsave = new System.Windows.Forms.Button();
+            this.btnedit = new System.Windows.Forms.Button();
+            this.btndel = new System.Windows.Forms.Button();
+            this.btnfirst = new System.Windows.Forms.Button();
+            this.btnprevious = new System.Windows.Forms.Button();
+            this.btnnext = new System.Windows.Forms.Button();
+            this.btnlast = new System.Windows.Forms.Button();
             this.txtpenaltycode = new System.Windows.Forms.TextBox();
             this.txtpenaltycost = new System.Windows.Forms.TextBox();
             this.txtpenaltydescription = new System.Windows.Forms.TextBox();
             this.lbl = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgvregpenalty = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvregpenalty)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // btnnew
             // 
-            this.button2.Location = new System.Drawing.Point(724, 379);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(65, 29);
-            this.button2.TabIndex = 38;
-            this.button2.Text = "جدید";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnnew.Location = new System.Drawing.Point(826, 324);
+            this.btnnew.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnnew.Name = "btnnew";
+            this.btnnew.Size = new System.Drawing.Size(87, 36);
+            this.btnnew.TabIndex = 38;
+            this.btnnew.Text = "جدید";
+            this.btnnew.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnsave
             // 
-            this.button3.Location = new System.Drawing.Point(655, 379);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(65, 29);
-            this.button3.TabIndex = 37;
-            this.button3.Text = "ذخیره";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnsave.Location = new System.Drawing.Point(734, 324);
+            this.btnsave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(87, 36);
+            this.btnsave.TabIndex = 37;
+            this.btnsave.Text = "ذخیره";
+            this.btnsave.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnedit
             // 
-            this.button4.Location = new System.Drawing.Point(586, 379);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(65, 29);
-            this.button4.TabIndex = 36;
-            this.button4.Text = "ویرایش";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnedit.Location = new System.Drawing.Point(642, 324);
+            this.btnedit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnedit.Name = "btnedit";
+            this.btnedit.Size = new System.Drawing.Size(87, 36);
+            this.btnedit.TabIndex = 36;
+            this.btnedit.Text = "ویرایش";
+            this.btnedit.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // btndel
             // 
-            this.button9.Location = new System.Drawing.Point(517, 379);
-            this.button9.Margin = new System.Windows.Forms.Padding(2);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(65, 29);
-            this.button9.TabIndex = 35;
-            this.button9.Text = "حذف";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btndel.Location = new System.Drawing.Point(550, 324);
+            this.btndel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btndel.Name = "btndel";
+            this.btndel.Size = new System.Drawing.Size(87, 36);
+            this.btndel.TabIndex = 35;
+            this.btndel.Text = "حذف";
+            this.btndel.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnfirst
             // 
-            this.button6.Location = new System.Drawing.Point(724, 412);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(65, 29);
-            this.button6.TabIndex = 34;
-            this.button6.Text = "اولین";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnfirst.Location = new System.Drawing.Point(826, 365);
+            this.btnfirst.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnfirst.Name = "btnfirst";
+            this.btnfirst.Size = new System.Drawing.Size(87, 36);
+            this.btnfirst.TabIndex = 34;
+            this.btnfirst.Text = "اولین";
+            this.btnfirst.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnprevious
             // 
-            this.button7.Location = new System.Drawing.Point(655, 412);
-            this.button7.Margin = new System.Windows.Forms.Padding(2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(65, 29);
-            this.button7.TabIndex = 33;
-            this.button7.Text = "قبلی";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnprevious.Location = new System.Drawing.Point(734, 365);
+            this.btnprevious.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnprevious.Name = "btnprevious";
+            this.btnprevious.Size = new System.Drawing.Size(87, 36);
+            this.btnprevious.TabIndex = 33;
+            this.btnprevious.Text = "قبلی";
+            this.btnprevious.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnnext
             // 
-            this.button5.Location = new System.Drawing.Point(586, 412);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(65, 29);
-            this.button5.TabIndex = 32;
-            this.button5.Text = "بعدی";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnnext.Location = new System.Drawing.Point(642, 365);
+            this.btnnext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnnext.Name = "btnnext";
+            this.btnnext.Size = new System.Drawing.Size(87, 36);
+            this.btnnext.TabIndex = 32;
+            this.btnnext.Text = "بعدی";
+            this.btnnext.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btnlast
             // 
-            this.button8.Location = new System.Drawing.Point(517, 412);
-            this.button8.Margin = new System.Windows.Forms.Padding(2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(65, 29);
-            this.button8.TabIndex = 31;
-            this.button8.Text = "آخرین";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnlast.Location = new System.Drawing.Point(550, 365);
+            this.btnlast.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnlast.Name = "btnlast";
+            this.btnlast.Size = new System.Drawing.Size(87, 36);
+            this.btnlast.TabIndex = 31;
+            this.btnlast.Text = "آخرین";
+            this.btnlast.UseVisualStyleBackColor = true;
             // 
             // txtpenaltycode
             // 
-            this.txtpenaltycode.Location = new System.Drawing.Point(517, 27);
+            this.txtpenaltycode.Location = new System.Drawing.Point(557, 13);
+            this.txtpenaltycode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtpenaltycode.Name = "txtpenaltycode";
-            this.txtpenaltycode.Size = new System.Drawing.Size(174, 20);
+            this.txtpenaltycode.Size = new System.Drawing.Size(231, 22);
             this.txtpenaltycode.TabIndex = 39;
             // 
             // txtpenaltycost
             // 
-            this.txtpenaltycost.Location = new System.Drawing.Point(517, 53);
+            this.txtpenaltycost.Location = new System.Drawing.Point(557, 45);
+            this.txtpenaltycost.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtpenaltycost.Name = "txtpenaltycost";
-            this.txtpenaltycost.Size = new System.Drawing.Size(174, 20);
+            this.txtpenaltycost.Size = new System.Drawing.Size(231, 22);
             this.txtpenaltycost.TabIndex = 40;
             // 
             // txtpenaltydescription
             // 
-            this.txtpenaltydescription.Location = new System.Drawing.Point(517, 79);
+            this.txtpenaltydescription.Location = new System.Drawing.Point(557, 77);
+            this.txtpenaltydescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtpenaltydescription.Name = "txtpenaltydescription";
-            this.txtpenaltydescription.Size = new System.Drawing.Size(174, 20);
+            this.txtpenaltydescription.Size = new System.Drawing.Size(231, 22);
             this.txtpenaltydescription.TabIndex = 41;
             // 
             // lbl
             // 
             this.lbl.AutoSize = true;
-            this.lbl.Location = new System.Drawing.Point(704, 30);
+            this.lbl.Location = new System.Drawing.Point(807, 17);
+            this.lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(48, 13);
+            this.lbl.Size = new System.Drawing.Size(52, 16);
             this.lbl.TabIndex = 42;
             this.lbl.Text = "کد جریمه";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(697, 56);
+            this.label2.Location = new System.Drawing.Point(797, 49);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.Size = new System.Drawing.Size(60, 16);
             this.label2.TabIndex = 43;
             this.label2.Text = "مبلغ جریمه";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(697, 82);
+            this.label3.Location = new System.Drawing.Point(797, 81);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 13);
+            this.label3.Size = new System.Drawing.Size(63, 16);
             this.label3.TabIndex = 44;
             this.label3.Text = "شرح جریمه";
             // 
-            // dataGridView1
+            // dgvregpenalty
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(463, 426);
-            this.dataGridView1.TabIndex = 45;
+            this.dgvregpenalty.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvregpenalty.Location = new System.Drawing.Point(13, 13);
+            this.dgvregpenalty.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvregpenalty.Name = "dgvregpenalty";
+            this.dgvregpenalty.RowHeadersWidth = 51;
+            this.dgvregpenalty.Size = new System.Drawing.Size(523, 396);
+            this.dgvregpenalty.TabIndex = 45;
             // 
             // RegPenalty
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(917, 422);
+            this.Controls.Add(this.dgvregpenalty);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl);
             this.Controls.Add(this.txtpenaltydescription);
             this.Controls.Add(this.txtpenaltycost);
             this.Controls.Add(this.txtpenaltycode);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.btnnew);
+            this.Controls.Add(this.btnsave);
+            this.Controls.Add(this.btnedit);
+            this.Controls.Add(this.btndel);
+            this.Controls.Add(this.btnfirst);
+            this.Controls.Add(this.btnprevious);
+            this.Controls.Add(this.btnnext);
+            this.Controls.Add(this.btnlast);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "RegPenalty";
             this.Text = "RegPenalty";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvregpenalty)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,20 +221,20 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnnew;
+        private System.Windows.Forms.Button btnsave;
+        private System.Windows.Forms.Button btnedit;
+        private System.Windows.Forms.Button btndel;
+        private System.Windows.Forms.Button btnfirst;
+        private System.Windows.Forms.Button btnprevious;
+        private System.Windows.Forms.Button btnnext;
+        private System.Windows.Forms.Button btnlast;
         private System.Windows.Forms.TextBox txtpenaltycode;
         private System.Windows.Forms.TextBox txtpenaltycost;
         private System.Windows.Forms.TextBox txtpenaltydescription;
         private System.Windows.Forms.Label lbl;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvregpenalty;
     }
 }

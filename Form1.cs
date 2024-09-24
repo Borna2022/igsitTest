@@ -41,5 +41,11 @@ namespace igsit
             RegPersonForm RegPersonForm = new RegPersonForm();
             RegPersonForm.Show();
         }
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            RegPenalty RegPenaltyForm = new RegPenalty();
+            RegPenaltyForm.Show();
+        }
     }
 }

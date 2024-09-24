@@ -9,3 +9,17 @@ D:\Borna\C#Projects\igsit\igsit\obj\Debug\igsit.csproj.CoreCompileInputs.cache
 D:\Borna\C#Projects\igsit\igsit\obj\Debug\igsit.exe
 D:\Borna\C#Projects\igsit\igsit\obj\Debug\igsit.pdb
 D:\Borna\C#Projects\igsit\igsit\obj\Debug\igsit.RegPersonForm.resources
+C:\Users\smc-developer\Source\Repos\igsitTest\obj\Debug\igsit.csproj.AssemblyReference.cache
+C:\Users\smc-developer\Source\Repos\igsitTest\obj\Debug\igsit.csproj.SuggestedBindingRedirects.cache
+C:\Users\smc-developer\Source\Repos\igsitTest\obj\Debug\igsit.Form1.resources
+C:\Users\smc-developer\Source\Repos\igsitTest\obj\Debug\igsit.Properties.Resources.resources
+C:\Users\smc-developer\Source\Repos\igsitTest\obj\Debug\igsit.RegPenalty.resources
+C:\Users\smc-developer\Source\Repos\igsitTest\obj\Debug\igsit.RegPersonForm.resources
+C:\Users\smc-developer\Source\Repos\igsitTest\obj\Debug\igsit.csproj.GenerateResource.cache
+C:\Users\smc-developer\Source\Repos\igsitTest\obj\Debug\igsit.csproj.CoreCompileInputs.cache
+C:\Users\smc-developer\Source\Repos\igsitTest\obj\Debug\igsit.exe
+C:\Users\smc-developer\Source\Repos\igsitTest\obj\Debug\igsit.pdb
+C:\Users\smc-developer\Source\Repos\igsitTest\bin\Debug\igsit.exe.config
+C:\Users\smc-developer\Source\Repos\igsitTest\bin\Debug\igsit.exe
+C:\Users\smc-developer\Source\Repos\igsitTest\bin\Debug\igsit.pdb
+C:\Users\smc-developer\Source\Repos\igsitTest\obj\Debug\igsit.PenaltyRegisterForm.resources

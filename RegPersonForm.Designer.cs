@@ -172,7 +172,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(514, 394);
+            this.button8.Location = new System.Drawing.Point(546, 391);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(65, 31);
             this.button8.TabIndex = 23;
@@ -181,16 +181,17 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(585, 394);
+            this.button5.Location = new System.Drawing.Point(617, 391);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(65, 31);
             this.button5.TabIndex = 24;
             this.button5.Text = "بعدی";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(727, 394);
+            this.button6.Location = new System.Drawing.Point(759, 391);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(70, 31);
             this.button6.TabIndex = 26;
@@ -199,12 +200,13 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(656, 394);
+            this.button7.Location = new System.Drawing.Point(688, 391);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(65, 31);
             this.button7.TabIndex = 25;
             this.button7.Text = "قبلی";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button2
             // 

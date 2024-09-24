@@ -17,7 +17,7 @@ namespace igsit
         SqlCommand cmd1 = new SqlCommand();
         SqlDataAdapter da = new SqlDataAdapter();
         DataSet ds = new DataSet();
-
+        CurrencyManager cr;
 
         public RegPersonForm()
         {
@@ -51,6 +51,17 @@ namespace igsit
             txtlastname.DataBindings.Add("text", ds, "T1.fprs_LastName");
             txtvin.DataBindings.Clear();
             txtvin.DataBindings.Add("text", ds, "T1.fprs_VinCode");
+            cr = (CurrencyManager)this.BindingContext[ds, "T1"];
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            cr.Position++;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            cr.Position--;
         }
     }
 }

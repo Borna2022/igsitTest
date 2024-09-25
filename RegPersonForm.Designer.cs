@@ -40,8 +40,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtsearch = new System.Windows.Forms.TextBox();
             this.cbosearch = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnsearch = new System.Windows.Forms.Button();
+            this.dgvtpersons = new System.Windows.Forms.DataGridView();
             this.btnlast = new System.Windows.Forms.Button();
             this.btnnext = new System.Windows.Forms.Button();
             this.btnfirst = new System.Windows.Forms.Button();
@@ -50,7 +50,7 @@
             this.btnsave = new System.Windows.Forms.Button();
             this.btnedit = new System.Windows.Forms.Button();
             this.btndel = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvtpersons)).BeginInit();
             this.SuspendLayout();
             // 
             // txtpersoncode
@@ -157,36 +157,45 @@
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.Size = new System.Drawing.Size(119, 20);
             this.txtsearch.TabIndex = 11;
+            this.txtsearch.TextChanged += new System.EventHandler(this.txtsearch_TextChanged);
             // 
             // cbosearch
             // 
+            this.cbosearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbosearch.FormattingEnabled = true;
+            this.cbosearch.Items.AddRange(new object[] {
+            "نام",
+            "نام خانوادگی",
+            "کد ملی",
+            "سریال کارت"});
             this.cbosearch.Location = new System.Drawing.Point(143, 11);
             this.cbosearch.Margin = new System.Windows.Forms.Padding(2);
             this.cbosearch.Name = "cbosearch";
             this.cbosearch.Size = new System.Drawing.Size(119, 21);
             this.cbosearch.TabIndex = 14;
             // 
-            // button1
+            // btnsearch
             // 
-            this.button1.Location = new System.Drawing.Point(177, 58);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 30);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "جستجو";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnsearch.Location = new System.Drawing.Point(177, 58);
+            this.btnsearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnsearch.Name = "btnsearch";
+            this.btnsearch.Size = new System.Drawing.Size(56, 30);
+            this.btnsearch.TabIndex = 15;
+            this.btnsearch.Text = "جستجو";
+            this.btnsearch.UseVisualStyleBackColor = true;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
             // 
-            // dataGridView1
+            // dgvtpersons
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(14, 92);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(367, 264);
-            this.dataGridView1.TabIndex = 16;
+            this.dgvtpersons.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvtpersons.Location = new System.Drawing.Point(14, 92);
+            this.dgvtpersons.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvtpersons.Name = "dgvtpersons";
+            this.dgvtpersons.RowHeadersWidth = 51;
+            this.dgvtpersons.RowTemplate.Height = 24;
+            this.dgvtpersons.Size = new System.Drawing.Size(367, 264);
+            this.dgvtpersons.TabIndex = 16;
+            this.dgvtpersons.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvtpersons_CellClick);
             // 
             // btnlast
             // 
@@ -264,6 +273,7 @@
             this.btnedit.TabIndex = 28;
             this.btnedit.Text = "ویرایش";
             this.btnedit.UseVisualStyleBackColor = true;
+            this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
             // 
             // btndel
             // 
@@ -274,6 +284,7 @@
             this.btndel.TabIndex = 27;
             this.btndel.Text = "حذف";
             this.btndel.UseVisualStyleBackColor = true;
+            this.btndel.Click += new System.EventHandler(this.btndel_Click);
             // 
             // RegPersonForm
             // 
@@ -288,8 +299,8 @@
             this.Controls.Add(this.btnprevious);
             this.Controls.Add(this.btnnext);
             this.Controls.Add(this.btnlast);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dgvtpersons);
+            this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.cbosearch);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
@@ -306,7 +317,7 @@
             this.Name = "RegPersonForm";
             this.Text = "RegPersonForm";
             this.Load += new System.EventHandler(this.RegPersonForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvtpersons)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -325,8 +336,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtsearch;
         private System.Windows.Forms.ComboBox cbosearch;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnsearch;
+        private System.Windows.Forms.DataGridView dgvtpersons;
         private System.Windows.Forms.Button btnlast;
         private System.Windows.Forms.Button btnnext;
         private System.Windows.Forms.Button btnfirst;

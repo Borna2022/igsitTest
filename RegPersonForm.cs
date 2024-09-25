@@ -42,8 +42,8 @@ namespace igsit
             da.SelectCommand = cmd1;
             ds.Clear();
             da.Fill(ds,"T1");
-            dataGridView1.DataBindings.Clear();
-            dataGridView1.DataBindings.Add("Datasource", ds, "T1");
+            dgvtpersons.DataBindings.Clear();
+            dgvtpersons.DataBindings.Add("Datasource", ds, "T1");
             txtpersoncode.DataBindings.Clear();
             txtpersoncode.DataBindings.Add("text", ds, "T1.fprs_personCode");
             txtname.DataBindings.Clear();
@@ -54,22 +54,22 @@ namespace igsit
             txtvin.DataBindings.Add("text", ds, "T1.fprs_VinCode");
             cr = (CurrencyManager)this.BindingContext[ds, "T1"];
         }
-
+        //first record
         private void btnfirst_Click(object sender, EventArgs e)
         {
             cr.Position = 0;
         }
-
+        //previous record
         private void btnprevious_Click(object sender, EventArgs e)
         {
             cr.Position--;
         }
-
+        //last record
         private void btnlast_Click(object sender, EventArgs e)
         {
             cr.Position = cr.Count - 1;
         }
-
+        //next record
         private void btnnext_Click(object sender, EventArgs e)
         {
             cr.Position++;
@@ -107,6 +107,96 @@ namespace igsit
             txtlastname.ReadOnly = true;
             txtvin.ReadOnly = true;
             fillgrid();
+        }
+
+
+        private void btndel_Click(object sender, EventArgs e)
+        {
+            DialogResult x;
+            x = MessageBox.Show("Do you want to delete " + txtname.Text + " " + txtlastname.Text , "Warning",MessageBoxButtons.YesNo );
+            if (x == DialogResult.No)
+                return;
+            SqlCommand c2= new SqlCommand();
+            c2.CommandText = "delete from  T_Persons where fprs_personCode=@p1 ";
+            c2.Parameters.AddWithValue("p1", txtpersoncode.Text);
+            c2.Connection=conn;
+            c2.ExecuteNonQuery();
+            fillgrid();
+        }
+
+        private void dgvtpersons_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            cr.Position = e.RowIndex;
+        }
+
+        private void btnedit_Click(object sender, EventArgs e)
+        {
+            if (btnedit.Text == "ویرایش")
+            {
+                txtpersoncode.ReadOnly = true;
+                txtname.ReadOnly = false;
+                txtlastname.ReadOnly = false;
+                txtvin.ReadOnly = false;
+                btnedit.Text = "اعمال تغییرات";
+                txtname.Focus();
+
+            }
+            else
+            {
+                SqlCommand c3= new SqlCommand();
+                c3.CommandText = "update T_Persons set fprs_Name=@p1,fprs_LastName=@p2, fprs_VinCode=@p3 where fprs_personCode=@p4 ";
+                c3.Parameters.AddWithValue("P1", txtname.Text);
+                c3.Parameters.AddWithValue("P2", txtlastname.Text);
+                c3.Parameters.AddWithValue("P3", txtvin.Text);
+                c3.Parameters.AddWithValue("P4", txtpersoncode.Text);
+                c3.Connection=conn;
+                c3.ExecuteNonQuery();
+                fillgrid();
+                txtpersoncode.ReadOnly = true;
+                txtname.ReadOnly = true;
+                txtlastname.ReadOnly = true;
+                txtvin.ReadOnly = true;
+                btnedit.Text = "ویرایش";
+            }
+        }
+
+        private void txtsearch_TextChanged(object sender, EventArgs e)
+        {
+            btnsearch_Click(null, null);
+        }
+
+        private void btnsearch_Click(object sender, EventArgs e)
+        {
+            string b = string.Empty;
+            switch (cbosearch.SelectedIndex)
+            {
+                case 1:
+                    b = "fprs_Name";
+                    break;
+                case 2:
+                    b = "fprs_LastName";
+                    break;
+                case 3:
+                    b = "fprs_personCode";
+                    break;
+                case 4:
+                    b = "fprs_LastName";
+                    break;
+                default:
+                    // در صورت نیاز می‌توانید یک مقدار پیش‌فرض تعیین کنید
+                    break;
+            }
+
+            if (!string.IsNullOrEmpty(b))
+            {
+                string query = $"select * from T_Persons where {b} like '{txtsearch.Text}%'";
+                fillgrid(query);
+            }
+            else
+            {
+                // مدیریت حالت پیش‌فرض یا خطا
+            }
+
         }
     }
 }

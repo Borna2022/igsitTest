@@ -170,16 +170,16 @@ namespace igsit
             string b = string.Empty;
             switch (cbosearch.SelectedIndex)
             {
-                case 1:
+                case 0:
                     b = "fprs_Name";
                     break;
-                case 2:
+                case 1:
                     b = "fprs_LastName";
                     break;
-                case 3:
+                case 2:
                     b = "fprs_personCode";
                     break;
-                case 4:
+                case 3:
                     b = "fprs_LastName";
                     break;
                 default:

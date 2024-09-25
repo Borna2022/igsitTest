@@ -31,7 +31,7 @@ namespace igsit
 
         private void RegPersonForm_Load(object sender, EventArgs e)
         {
-            conn.ConnectionString = "Data Source = borna; Initial Catalog = igsitDBTest; Integrated Security = True;";
+            conn.ConnectionString = "Data Source=DESKTOP-HOJA8V1;Initial Catalog=igsitDBTest;Integrated Security=True";
             conn.Open();
             fillgrid();
         }
@@ -40,6 +40,7 @@ namespace igsit
             cmd1.CommandText = s;
             cmd1.Connection = conn;
             da.SelectCommand = cmd1;
+            ds.Clear();
             da.Fill(ds,"T1");
             dataGridView1.DataBindings.Clear();
             dataGridView1.DataBindings.Add("Datasource", ds, "T1");
@@ -76,10 +77,10 @@ namespace igsit
 
         private void btnnew_Click(object sender, EventArgs e)
         {
-            txtpersoncode.ReadOnly = true;
-            txtname.ReadOnly = true;
-            txtlastname.ReadOnly = true;
-            txtvin.ReadOnly = true;
+            txtpersoncode.ReadOnly = false;
+            txtname.ReadOnly = false;
+            txtlastname.ReadOnly = false;
+            txtvin.ReadOnly = false;
             txtpersoncode.Text = "";
             txtname.Text = "";
             txtlastname.Text = "";
@@ -92,7 +93,11 @@ namespace igsit
         private void btnsave_Click(object sender, EventArgs e)
         {
             SqlCommand c1 = new SqlCommand();
-            c1.CommandText = "insert into T_Persons values()";
+            c1.CommandText = "insert into T_Persons values(@p1,@p2,@p3,@p4)";
+            c1.Parameters.AddWithValue("p1", txtpersoncode.Text);
+            c1.Parameters.AddWithValue("p2", txtname.Text);
+            c1.Parameters.AddWithValue("p3", txtlastname.Text);
+            c1.Parameters.AddWithValue("p4", txtvin.Text);
             c1.Connection = conn;
             c1.ExecuteNonQuery();
             btnsave.Enabled = false;
@@ -101,6 +106,7 @@ namespace igsit
             txtname.ReadOnly = true;
             txtlastname.ReadOnly = true;
             txtvin.ReadOnly = true;
+            fillgrid();
         }
     }
 }

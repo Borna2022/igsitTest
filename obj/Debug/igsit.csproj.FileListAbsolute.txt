@@ -49,3 +49,4 @@ E:\Projects\P1403\igsit\repo01\obj\Debug\igsit.csproj.GenerateResource.cache
 E:\Projects\P1403\igsit\repo01\obj\Debug\igsit.csproj.CoreCompileInputs.cache
 E:\Projects\P1403\igsit\repo01\obj\Debug\igsit.exe
 E:\Projects\P1403\igsit\repo01\obj\Debug\igsit.pdb
+E:\Projects\P1403\igsit\repo01\obj\Debug\igsit.csproj.AssemblyReference.cache

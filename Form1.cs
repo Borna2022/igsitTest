@@ -31,9 +31,7 @@ namespace igsit
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
-
-
+           this.WindowState = FormWindowState.Maximized;
         }
 
         private void toolStripMenuItem5_Click(object sender, EventArgs e)

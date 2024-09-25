@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,7 +32,7 @@ namespace igsit
 
         private void RegPersonForm_Load(object sender, EventArgs e)
         {
-            conn.ConnectionString = "Data Source=DESKTOP-HOJA8V1;Initial Catalog=igsitDBTest;Integrated Security=True";
+            conn.ConnectionString = "Data Source=borna;Initial Catalog=igsitDBTest;Integrated Security=True;";
             conn.Open();
             fillgrid();
         }
@@ -197,6 +198,27 @@ namespace igsit
                 // مدیریت حالت پیش‌فرض یا خطا
             }
 
+        }
+
+        private void txtname_Enter(object sender, EventArgs e)
+        {
+            InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(new CultureInfo("fa-IR"));
+        }
+
+        private void txtname_Leave(object sender, EventArgs e)
+        {
+            InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(new CultureInfo("en-US"));
+
+        }
+
+        private void txtlastname_Enter(object sender, EventArgs e)
+        {
+            InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(new CultureInfo("fa-IR"));
+        }
+
+        private void txtlastname_Leave(object sender, EventArgs e)
+        {
+            InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(new CultureInfo("en-US"));
         }
     }
 }

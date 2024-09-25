@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace igsit
 {
@@ -15,6 +16,11 @@ namespace igsit
         public RegPenalty()
         {
             InitializeComponent();
+        }
+
+        private void RegPenalty_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

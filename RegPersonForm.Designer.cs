@@ -55,107 +55,107 @@
             // 
             // txtpersoncode
             // 
-            this.txtpersoncode.Location = new System.Drawing.Point(439, 92);
-            this.txtpersoncode.Margin = new System.Windows.Forms.Padding(2);
+            this.txtpersoncode.Location = new System.Drawing.Point(585, 113);
+            this.txtpersoncode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtpersoncode.Name = "txtpersoncode";
             this.txtpersoncode.ReadOnly = true;
-            this.txtpersoncode.Size = new System.Drawing.Size(119, 20);
+            this.txtpersoncode.Size = new System.Drawing.Size(157, 22);
             this.txtpersoncode.TabIndex = 1;
             // 
             // txtname
             // 
-            this.txtname.Location = new System.Drawing.Point(439, 115);
-            this.txtname.Margin = new System.Windows.Forms.Padding(2);
+            this.txtname.Location = new System.Drawing.Point(585, 142);
+            this.txtname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtname.Name = "txtname";
             this.txtname.ReadOnly = true;
-            this.txtname.Size = new System.Drawing.Size(119, 20);
+            this.txtname.Size = new System.Drawing.Size(157, 22);
             this.txtname.TabIndex = 2;
+            this.txtname.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtname.Enter += new System.EventHandler(this.txtname_Enter);
+            this.txtname.Leave += new System.EventHandler(this.txtname_Leave);
             // 
             // txtlastname
             // 
-            this.txtlastname.Location = new System.Drawing.Point(439, 137);
-            this.txtlastname.Margin = new System.Windows.Forms.Padding(2);
+            this.txtlastname.Location = new System.Drawing.Point(585, 169);
+            this.txtlastname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtlastname.Name = "txtlastname";
             this.txtlastname.ReadOnly = true;
-            this.txtlastname.Size = new System.Drawing.Size(119, 20);
+            this.txtlastname.Size = new System.Drawing.Size(157, 22);
             this.txtlastname.TabIndex = 3;
+            this.txtlastname.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtlastname.Enter += new System.EventHandler(this.txtlastname_Enter);
+            this.txtlastname.Leave += new System.EventHandler(this.txtlastname_Leave);
             // 
             // txtvin
             // 
-            this.txtvin.Location = new System.Drawing.Point(439, 160);
-            this.txtvin.Margin = new System.Windows.Forms.Padding(2);
+            this.txtvin.Location = new System.Drawing.Point(585, 197);
+            this.txtvin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtvin.Name = "txtvin";
             this.txtvin.ReadOnly = true;
-            this.txtvin.Size = new System.Drawing.Size(119, 20);
+            this.txtvin.Size = new System.Drawing.Size(157, 22);
             this.txtvin.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(590, 92);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(787, 113);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.Size = new System.Drawing.Size(42, 16);
             this.label2.TabIndex = 6;
             this.label2.Text = "کد ملی";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(608, 118);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(811, 145);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(20, 13);
+            this.label3.Size = new System.Drawing.Size(21, 16);
             this.label3.TabIndex = 7;
             this.label3.Text = "نام";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(561, 140);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(748, 172);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 13);
+            this.label4.Size = new System.Drawing.Size(73, 16);
             this.label4.TabIndex = 8;
             this.label4.Text = "نام خانوادگی";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(579, 163);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(772, 201);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 13);
+            this.label5.Size = new System.Drawing.Size(64, 16);
             this.label5.TabIndex = 9;
             this.label5.Text = "Vin Serial";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(265, 38);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(353, 47);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 13);
+            this.label6.Size = new System.Drawing.Size(62, 16);
             this.label6.TabIndex = 13;
             this.label6.Text = "متن جستجو";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(265, 15);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(353, 18);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 13);
+            this.label7.Size = new System.Drawing.Size(89, 16);
             this.label7.TabIndex = 12;
             this.label7.Text = "جستجو بر اساس";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // txtsearch
             // 
-            this.txtsearch.Location = new System.Drawing.Point(143, 35);
-            this.txtsearch.Margin = new System.Windows.Forms.Padding(2);
+            this.txtsearch.Location = new System.Drawing.Point(191, 43);
+            this.txtsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtsearch.Name = "txtsearch";
-            this.txtsearch.Size = new System.Drawing.Size(119, 20);
+            this.txtsearch.Size = new System.Drawing.Size(157, 22);
             this.txtsearch.TabIndex = 11;
             this.txtsearch.TextChanged += new System.EventHandler(this.txtsearch_TextChanged);
             // 
@@ -168,18 +168,18 @@
             "نام خانوادگی",
             "کد ملی",
             "سریال کارت"});
-            this.cbosearch.Location = new System.Drawing.Point(143, 11);
-            this.cbosearch.Margin = new System.Windows.Forms.Padding(2);
+            this.cbosearch.Location = new System.Drawing.Point(191, 14);
+            this.cbosearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbosearch.Name = "cbosearch";
-            this.cbosearch.Size = new System.Drawing.Size(119, 21);
+            this.cbosearch.Size = new System.Drawing.Size(157, 24);
             this.cbosearch.TabIndex = 14;
             // 
             // btnsearch
             // 
-            this.btnsearch.Location = new System.Drawing.Point(177, 58);
-            this.btnsearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnsearch.Location = new System.Drawing.Point(236, 71);
+            this.btnsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnsearch.Name = "btnsearch";
-            this.btnsearch.Size = new System.Drawing.Size(56, 30);
+            this.btnsearch.Size = new System.Drawing.Size(75, 37);
             this.btnsearch.TabIndex = 15;
             this.btnsearch.Text = "جستجو";
             this.btnsearch.UseVisualStyleBackColor = true;
@@ -188,21 +188,21 @@
             // dgvtpersons
             // 
             this.dgvtpersons.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvtpersons.Location = new System.Drawing.Point(14, 92);
-            this.dgvtpersons.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvtpersons.Location = new System.Drawing.Point(19, 113);
+            this.dgvtpersons.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvtpersons.Name = "dgvtpersons";
             this.dgvtpersons.RowHeadersWidth = 51;
             this.dgvtpersons.RowTemplate.Height = 24;
-            this.dgvtpersons.Size = new System.Drawing.Size(367, 264);
+            this.dgvtpersons.Size = new System.Drawing.Size(489, 325);
             this.dgvtpersons.TabIndex = 16;
             this.dgvtpersons.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvtpersons_CellClick);
             // 
             // btnlast
             // 
-            this.btnlast.Location = new System.Drawing.Point(394, 318);
-            this.btnlast.Margin = new System.Windows.Forms.Padding(2);
+            this.btnlast.Location = new System.Drawing.Point(525, 391);
+            this.btnlast.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnlast.Name = "btnlast";
-            this.btnlast.Size = new System.Drawing.Size(52, 26);
+            this.btnlast.Size = new System.Drawing.Size(69, 32);
             this.btnlast.TabIndex = 23;
             this.btnlast.Text = "آخرین";
             this.btnlast.UseVisualStyleBackColor = true;
@@ -210,10 +210,10 @@
             // 
             // btnnext
             // 
-            this.btnnext.Location = new System.Drawing.Point(451, 318);
-            this.btnnext.Margin = new System.Windows.Forms.Padding(2);
+            this.btnnext.Location = new System.Drawing.Point(601, 391);
+            this.btnnext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnnext.Name = "btnnext";
-            this.btnnext.Size = new System.Drawing.Size(52, 26);
+            this.btnnext.Size = new System.Drawing.Size(69, 32);
             this.btnnext.TabIndex = 24;
             this.btnnext.Text = "بعدی";
             this.btnnext.UseVisualStyleBackColor = true;
@@ -221,10 +221,10 @@
             // 
             // btnfirst
             // 
-            this.btnfirst.Location = new System.Drawing.Point(565, 318);
-            this.btnfirst.Margin = new System.Windows.Forms.Padding(2);
+            this.btnfirst.Location = new System.Drawing.Point(753, 391);
+            this.btnfirst.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnfirst.Name = "btnfirst";
-            this.btnfirst.Size = new System.Drawing.Size(52, 26);
+            this.btnfirst.Size = new System.Drawing.Size(69, 32);
             this.btnfirst.TabIndex = 26;
             this.btnfirst.Text = "اولین";
             this.btnfirst.UseVisualStyleBackColor = true;
@@ -232,10 +232,10 @@
             // 
             // btnprevious
             // 
-            this.btnprevious.Location = new System.Drawing.Point(508, 318);
-            this.btnprevious.Margin = new System.Windows.Forms.Padding(2);
+            this.btnprevious.Location = new System.Drawing.Point(677, 391);
+            this.btnprevious.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnprevious.Name = "btnprevious";
-            this.btnprevious.Size = new System.Drawing.Size(52, 26);
+            this.btnprevious.Size = new System.Drawing.Size(69, 32);
             this.btnprevious.TabIndex = 25;
             this.btnprevious.Text = "قبلی";
             this.btnprevious.UseVisualStyleBackColor = true;
@@ -243,10 +243,10 @@
             // 
             // btnnew
             // 
-            this.btnnew.Location = new System.Drawing.Point(565, 193);
-            this.btnnew.Margin = new System.Windows.Forms.Padding(2);
+            this.btnnew.Location = new System.Drawing.Point(753, 238);
+            this.btnnew.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnnew.Name = "btnnew";
-            this.btnnew.Size = new System.Drawing.Size(52, 26);
+            this.btnnew.Size = new System.Drawing.Size(69, 32);
             this.btnnew.TabIndex = 30;
             this.btnnew.Text = "جدید";
             this.btnnew.UseVisualStyleBackColor = true;
@@ -255,10 +255,10 @@
             // btnsave
             // 
             this.btnsave.Enabled = false;
-            this.btnsave.Location = new System.Drawing.Point(508, 193);
-            this.btnsave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnsave.Location = new System.Drawing.Point(677, 238);
+            this.btnsave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(52, 26);
+            this.btnsave.Size = new System.Drawing.Size(69, 32);
             this.btnsave.TabIndex = 29;
             this.btnsave.Text = "ذخیره";
             this.btnsave.UseVisualStyleBackColor = true;
@@ -266,10 +266,10 @@
             // 
             // btnedit
             // 
-            this.btnedit.Location = new System.Drawing.Point(451, 193);
-            this.btnedit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnedit.Location = new System.Drawing.Point(601, 238);
+            this.btnedit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnedit.Name = "btnedit";
-            this.btnedit.Size = new System.Drawing.Size(52, 26);
+            this.btnedit.Size = new System.Drawing.Size(69, 32);
             this.btnedit.TabIndex = 28;
             this.btnedit.Text = "ویرایش";
             this.btnedit.UseVisualStyleBackColor = true;
@@ -277,10 +277,10 @@
             // 
             // btndel
             // 
-            this.btndel.Location = new System.Drawing.Point(394, 193);
-            this.btndel.Margin = new System.Windows.Forms.Padding(2);
+            this.btndel.Location = new System.Drawing.Point(525, 238);
+            this.btndel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btndel.Name = "btndel";
-            this.btndel.Size = new System.Drawing.Size(52, 26);
+            this.btndel.Size = new System.Drawing.Size(69, 32);
             this.btndel.TabIndex = 27;
             this.btndel.Text = "حذف";
             this.btndel.UseVisualStyleBackColor = true;
@@ -288,9 +288,9 @@
             // 
             // RegPersonForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(639, 366);
+            this.ClientSize = new System.Drawing.Size(852, 450);
             this.Controls.Add(this.btnnew);
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.btnedit);
@@ -313,7 +313,7 @@
             this.Controls.Add(this.txtlastname);
             this.Controls.Add(this.txtname);
             this.Controls.Add(this.txtpersoncode);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "RegPersonForm";
             this.Text = "RegPersonForm";
             this.Load += new System.EventHandler(this.RegPersonForm_Load);

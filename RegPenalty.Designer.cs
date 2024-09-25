@@ -129,7 +129,7 @@
             // txtpenaltycode
             // 
             this.txtpenaltycode.Location = new System.Drawing.Point(557, 13);
-            this.txtpenaltycode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtpenaltycode.Margin = new System.Windows.Forms.Padding(4);
             this.txtpenaltycode.Name = "txtpenaltycode";
             this.txtpenaltycode.Size = new System.Drawing.Size(231, 22);
             this.txtpenaltycode.TabIndex = 39;
@@ -137,7 +137,7 @@
             // txtpenaltycost
             // 
             this.txtpenaltycost.Location = new System.Drawing.Point(557, 45);
-            this.txtpenaltycost.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtpenaltycost.Margin = new System.Windows.Forms.Padding(4);
             this.txtpenaltycost.Name = "txtpenaltycost";
             this.txtpenaltycost.Size = new System.Drawing.Size(231, 22);
             this.txtpenaltycost.TabIndex = 40;
@@ -145,7 +145,7 @@
             // txtpenaltydescription
             // 
             this.txtpenaltydescription.Location = new System.Drawing.Point(557, 77);
-            this.txtpenaltydescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtpenaltydescription.Margin = new System.Windows.Forms.Padding(4);
             this.txtpenaltydescription.Name = "txtpenaltydescription";
             this.txtpenaltydescription.Size = new System.Drawing.Size(231, 22);
             this.txtpenaltydescription.TabIndex = 41;
@@ -184,7 +184,7 @@
             // 
             this.dgvregpenalty.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvregpenalty.Location = new System.Drawing.Point(13, 13);
-            this.dgvregpenalty.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvregpenalty.Margin = new System.Windows.Forms.Padding(4);
             this.dgvregpenalty.Name = "dgvregpenalty";
             this.dgvregpenalty.RowHeadersWidth = 51;
             this.dgvregpenalty.Size = new System.Drawing.Size(523, 396);
@@ -210,9 +210,10 @@
             this.Controls.Add(this.btnprevious);
             this.Controls.Add(this.btnnext);
             this.Controls.Add(this.btnlast);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RegPenalty";
             this.Text = "RegPenalty";
+            this.Load += new System.EventHandler(this.RegPenalty_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvregpenalty)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -222,5 +222,34 @@ namespace igsit
         {
             InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(new CultureInfo("en-US"));
         }
+
+        private void txtsearch_Enter(object sender, EventArgs e)
+        {
+            switch (cbosearch.SelectedIndex)
+            {
+                case 0:
+                    
+                    InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(new CultureInfo("fa-IR"));
+                    break;
+                case 1:
+                    
+                    InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(new CultureInfo("fa-IR"));
+                    break;
+                case 2:
+                    InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(new CultureInfo("en-US"));
+                    break;
+                case 3:
+                    InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(new CultureInfo("en-US"));
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void cbosearch_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtsearch.Focus();
+            txtsearch.Clear();
+        }
     }
 }

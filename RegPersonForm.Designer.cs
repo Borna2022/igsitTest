@@ -158,6 +158,7 @@
             this.txtsearch.Size = new System.Drawing.Size(157, 22);
             this.txtsearch.TabIndex = 11;
             this.txtsearch.TextChanged += new System.EventHandler(this.txtsearch_TextChanged);
+            this.txtsearch.Enter += new System.EventHandler(this.txtsearch_Enter);
             // 
             // cbosearch
             // 
@@ -173,6 +174,7 @@
             this.cbosearch.Name = "cbosearch";
             this.cbosearch.Size = new System.Drawing.Size(157, 24);
             this.cbosearch.TabIndex = 14;
+            this.cbosearch.SelectedIndexChanged += new System.EventHandler(this.cbosearch_SelectedIndexChanged);
             // 
             // btnsearch
             // 

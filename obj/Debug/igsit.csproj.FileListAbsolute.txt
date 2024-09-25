@@ -36,3 +36,16 @@ D:\Borna\C#Projects\igsit\git\obj\Debug\igsit.csproj.GenerateResource.cache
 D:\Borna\C#Projects\igsit\git\obj\Debug\igsit.csproj.CoreCompileInputs.cache
 D:\Borna\C#Projects\igsit\git\obj\Debug\igsit.exe
 D:\Borna\C#Projects\igsit\git\obj\Debug\igsit.pdb
+E:\Projects\P1403\igsit\repo01\bin\Debug\igsit.exe.config
+E:\Projects\P1403\igsit\repo01\bin\Debug\igsit.exe
+E:\Projects\P1403\igsit\repo01\bin\Debug\igsit.pdb
+E:\Projects\P1403\igsit\repo01\obj\Debug\igsit.csproj.SuggestedBindingRedirects.cache
+E:\Projects\P1403\igsit\repo01\obj\Debug\igsit.Form1.resources
+E:\Projects\P1403\igsit\repo01\obj\Debug\igsit.Properties.Resources.resources
+E:\Projects\P1403\igsit\repo01\obj\Debug\igsit.PenaltyRegisterForm.resources
+E:\Projects\P1403\igsit\repo01\obj\Debug\igsit.RegPenalty.resources
+E:\Projects\P1403\igsit\repo01\obj\Debug\igsit.RegPersonForm.resources
+E:\Projects\P1403\igsit\repo01\obj\Debug\igsit.csproj.GenerateResource.cache
+E:\Projects\P1403\igsit\repo01\obj\Debug\igsit.csproj.CoreCompileInputs.cache
+E:\Projects\P1403\igsit\repo01\obj\Debug\igsit.exe
+E:\Projects\P1403\igsit\repo01\obj\Debug\igsit.pdb

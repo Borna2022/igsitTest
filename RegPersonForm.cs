@@ -54,19 +54,53 @@ namespace igsit
             cr = (CurrencyManager)this.BindingContext[ds, "T1"];
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnfirst_Click(object sender, EventArgs e)
         {
-            cr.Position++;
+            cr.Position = 0;
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void btnprevious_Click(object sender, EventArgs e)
         {
             cr.Position--;
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void btnlast_Click(object sender, EventArgs e)
         {
+            cr.Position = cr.Count - 1;
+        }
 
+        private void btnnext_Click(object sender, EventArgs e)
+        {
+            cr.Position++;
+        }
+
+        private void btnnew_Click(object sender, EventArgs e)
+        {
+            txtpersoncode.ReadOnly = true;
+            txtname.ReadOnly = true;
+            txtlastname.ReadOnly = true;
+            txtvin.ReadOnly = true;
+            txtpersoncode.Text = "";
+            txtname.Text = "";
+            txtlastname.Text = "";
+            txtvin.Text = "";
+            btnnew.Enabled = false;
+            btnsave.Enabled = true;
+            txtpersoncode.Focus();
+        }
+
+        private void btnsave_Click(object sender, EventArgs e)
+        {
+            SqlCommand c1 = new SqlCommand();
+            c1.CommandText = "insert into T_Persons values()";
+            c1.Connection = conn;
+            c1.ExecuteNonQuery();
+            btnsave.Enabled = false;
+            btnnew.Enabled = true;
+            txtpersoncode.ReadOnly = true;
+            txtname.ReadOnly = true;
+            txtlastname.ReadOnly = true;
+            txtvin.ReadOnly = true;
         }
     }
 }

@@ -56,39 +56,43 @@
             // txtpersoncode
             // 
             this.txtpersoncode.Location = new System.Drawing.Point(439, 92);
-            this.txtpersoncode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtpersoncode.Margin = new System.Windows.Forms.Padding(2);
             this.txtpersoncode.Name = "txtpersoncode";
+            this.txtpersoncode.ReadOnly = true;
             this.txtpersoncode.Size = new System.Drawing.Size(119, 20);
             this.txtpersoncode.TabIndex = 1;
             // 
             // txtname
             // 
             this.txtname.Location = new System.Drawing.Point(439, 115);
-            this.txtname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtname.Margin = new System.Windows.Forms.Padding(2);
             this.txtname.Name = "txtname";
+            this.txtname.ReadOnly = true;
             this.txtname.Size = new System.Drawing.Size(119, 20);
             this.txtname.TabIndex = 2;
             // 
             // txtlastname
             // 
             this.txtlastname.Location = new System.Drawing.Point(439, 137);
-            this.txtlastname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtlastname.Margin = new System.Windows.Forms.Padding(2);
             this.txtlastname.Name = "txtlastname";
+            this.txtlastname.ReadOnly = true;
             this.txtlastname.Size = new System.Drawing.Size(119, 20);
             this.txtlastname.TabIndex = 3;
             // 
             // txtvin
             // 
             this.txtvin.Location = new System.Drawing.Point(439, 160);
-            this.txtvin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtvin.Margin = new System.Windows.Forms.Padding(2);
             this.txtvin.Name = "txtvin";
+            this.txtvin.ReadOnly = true;
             this.txtvin.Size = new System.Drawing.Size(119, 20);
             this.txtvin.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(584, 92);
+            this.label2.Location = new System.Drawing.Point(590, 92);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
@@ -98,7 +102,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(600, 117);
+            this.label3.Location = new System.Drawing.Point(608, 118);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(20, 13);
@@ -118,7 +122,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(568, 160);
+            this.label5.Location = new System.Drawing.Point(579, 163);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(51, 13);
@@ -128,7 +132,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(148, 37);
+            this.label6.Location = new System.Drawing.Point(265, 38);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(59, 13);
@@ -138,7 +142,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(148, 14);
+            this.label7.Location = new System.Drawing.Point(265, 15);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(80, 13);
@@ -148,8 +152,8 @@
             // 
             // txtsearch
             // 
-            this.txtsearch.Location = new System.Drawing.Point(26, 34);
-            this.txtsearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtsearch.Location = new System.Drawing.Point(143, 35);
+            this.txtsearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.Size = new System.Drawing.Size(119, 20);
             this.txtsearch.TabIndex = 11;
@@ -157,16 +161,16 @@
             // cbosearch
             // 
             this.cbosearch.FormattingEnabled = true;
-            this.cbosearch.Location = new System.Drawing.Point(26, 10);
-            this.cbosearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbosearch.Location = new System.Drawing.Point(143, 11);
+            this.cbosearch.Margin = new System.Windows.Forms.Padding(2);
             this.cbosearch.Name = "cbosearch";
             this.cbosearch.Size = new System.Drawing.Size(119, 21);
             this.cbosearch.TabIndex = 14;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(60, 57);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(177, 58);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 30);
             this.button1.TabIndex = 15;
@@ -177,7 +181,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(14, 92);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -186,71 +190,75 @@
             // 
             // btnlast
             // 
-            this.btnlast.Location = new System.Drawing.Point(410, 318);
-            this.btnlast.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnlast.Location = new System.Drawing.Point(394, 318);
+            this.btnlast.Margin = new System.Windows.Forms.Padding(2);
             this.btnlast.Name = "btnlast";
-            this.btnlast.Size = new System.Drawing.Size(49, 25);
+            this.btnlast.Size = new System.Drawing.Size(52, 26);
             this.btnlast.TabIndex = 23;
             this.btnlast.Text = "آخرین";
             this.btnlast.UseVisualStyleBackColor = true;
+            this.btnlast.Click += new System.EventHandler(this.btnlast_Click);
             // 
             // btnnext
             // 
-            this.btnnext.Location = new System.Drawing.Point(463, 318);
-            this.btnnext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnnext.Location = new System.Drawing.Point(451, 318);
+            this.btnnext.Margin = new System.Windows.Forms.Padding(2);
             this.btnnext.Name = "btnnext";
-            this.btnnext.Size = new System.Drawing.Size(49, 25);
+            this.btnnext.Size = new System.Drawing.Size(52, 26);
             this.btnnext.TabIndex = 24;
             this.btnnext.Text = "بعدی";
             this.btnnext.UseVisualStyleBackColor = true;
-            this.btnnext.Click += new System.EventHandler(this.button5_Click);
+            this.btnnext.Click += new System.EventHandler(this.btnnext_Click);
             // 
             // btnfirst
             // 
-            this.btnfirst.Location = new System.Drawing.Point(569, 318);
-            this.btnfirst.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnfirst.Location = new System.Drawing.Point(565, 318);
+            this.btnfirst.Margin = new System.Windows.Forms.Padding(2);
             this.btnfirst.Name = "btnfirst";
-            this.btnfirst.Size = new System.Drawing.Size(52, 25);
+            this.btnfirst.Size = new System.Drawing.Size(52, 26);
             this.btnfirst.TabIndex = 26;
             this.btnfirst.Text = "اولین";
             this.btnfirst.UseVisualStyleBackColor = true;
-            this.btnfirst.Click += new System.EventHandler(this.button6_Click);
+            this.btnfirst.Click += new System.EventHandler(this.btnfirst_Click);
             // 
             // btnprevious
             // 
-            this.btnprevious.Location = new System.Drawing.Point(516, 318);
-            this.btnprevious.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnprevious.Location = new System.Drawing.Point(508, 318);
+            this.btnprevious.Margin = new System.Windows.Forms.Padding(2);
             this.btnprevious.Name = "btnprevious";
-            this.btnprevious.Size = new System.Drawing.Size(49, 25);
+            this.btnprevious.Size = new System.Drawing.Size(52, 26);
             this.btnprevious.TabIndex = 25;
             this.btnprevious.Text = "قبلی";
             this.btnprevious.UseVisualStyleBackColor = true;
-            this.btnprevious.Click += new System.EventHandler(this.button7_Click);
+            this.btnprevious.Click += new System.EventHandler(this.btnprevious_Click);
             // 
             // btnnew
             // 
             this.btnnew.Location = new System.Drawing.Point(565, 193);
-            this.btnnew.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnnew.Margin = new System.Windows.Forms.Padding(2);
             this.btnnew.Name = "btnnew";
             this.btnnew.Size = new System.Drawing.Size(52, 26);
             this.btnnew.TabIndex = 30;
             this.btnnew.Text = "جدید";
             this.btnnew.UseVisualStyleBackColor = true;
+            this.btnnew.Click += new System.EventHandler(this.btnnew_Click);
             // 
             // btnsave
             // 
+            this.btnsave.Enabled = false;
             this.btnsave.Location = new System.Drawing.Point(508, 193);
-            this.btnsave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnsave.Margin = new System.Windows.Forms.Padding(2);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(52, 26);
             this.btnsave.TabIndex = 29;
             this.btnsave.Text = "ذخیره";
             this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // btnedit
             // 
             this.btnedit.Location = new System.Drawing.Point(451, 193);
-            this.btnedit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnedit.Margin = new System.Windows.Forms.Padding(2);
             this.btnedit.Name = "btnedit";
             this.btnedit.Size = new System.Drawing.Size(52, 26);
             this.btnedit.TabIndex = 28;
@@ -260,7 +268,7 @@
             // btndel
             // 
             this.btndel.Location = new System.Drawing.Point(394, 193);
-            this.btndel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btndel.Margin = new System.Windows.Forms.Padding(2);
             this.btndel.Name = "btndel";
             this.btndel.Size = new System.Drawing.Size(52, 26);
             this.btndel.TabIndex = 27;
@@ -294,7 +302,7 @@
             this.Controls.Add(this.txtlastname);
             this.Controls.Add(this.txtname);
             this.Controls.Add(this.txtpersoncode);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RegPersonForm";
             this.Text = "RegPersonForm";
             this.Load += new System.EventHandler(this.RegPersonForm_Load);

@@ -1,0 +1,14 @@
+E:\Projects\P1403\igsit\repo01\bin\Release\igsit.exe.config
+E:\Projects\P1403\igsit\repo01\bin\Release\igsit.exe
+E:\Projects\P1403\igsit\repo01\bin\Release\igsit.pdb
+E:\Projects\P1403\igsit\repo01\obj\Release\igsit.csproj.AssemblyReference.cache
+E:\Projects\P1403\igsit\repo01\obj\Release\igsit.csproj.SuggestedBindingRedirects.cache
+E:\Projects\P1403\igsit\repo01\obj\Release\igsit.Form1.resources
+E:\Projects\P1403\igsit\repo01\obj\Release\igsit.Properties.Resources.resources
+E:\Projects\P1403\igsit\repo01\obj\Release\igsit.PenaltyRegisterForm.resources
+E:\Projects\P1403\igsit\repo01\obj\Release\igsit.RegPenalty.resources
+E:\Projects\P1403\igsit\repo01\obj\Release\igsit.RegPersonForm.resources
+E:\Projects\P1403\igsit\repo01\obj\Release\igsit.csproj.GenerateResource.cache
+E:\Projects\P1403\igsit\repo01\obj\Release\igsit.csproj.CoreCompileInputs.cache
+E:\Projects\P1403\igsit\repo01\obj\Release\igsit.exe
+E:\Projects\P1403\igsit\repo01\obj\Release\igsit.pdb

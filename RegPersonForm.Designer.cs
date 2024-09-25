@@ -243,10 +243,10 @@
             // 
             // btnnew
             // 
-            this.btnnew.Location = new System.Drawing.Point(753, 238);
+            this.btnnew.Location = new System.Drawing.Point(716, 238);
             this.btnnew.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnnew.Name = "btnnew";
-            this.btnnew.Size = new System.Drawing.Size(69, 32);
+            this.btnnew.Size = new System.Drawing.Size(84, 32);
             this.btnnew.TabIndex = 30;
             this.btnnew.Text = "جدید";
             this.btnnew.UseVisualStyleBackColor = true;
@@ -255,10 +255,10 @@
             // btnsave
             // 
             this.btnsave.Enabled = false;
-            this.btnsave.Location = new System.Drawing.Point(677, 238);
+            this.btnsave.Location = new System.Drawing.Point(626, 238);
             this.btnsave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(69, 32);
+            this.btnsave.Size = new System.Drawing.Size(84, 32);
             this.btnsave.TabIndex = 29;
             this.btnsave.Text = "ذخیره";
             this.btnsave.UseVisualStyleBackColor = true;
@@ -266,10 +266,10 @@
             // 
             // btnedit
             // 
-            this.btnedit.Location = new System.Drawing.Point(601, 238);
+            this.btnedit.Location = new System.Drawing.Point(536, 238);
             this.btnedit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnedit.Name = "btnedit";
-            this.btnedit.Size = new System.Drawing.Size(69, 32);
+            this.btnedit.Size = new System.Drawing.Size(84, 32);
             this.btnedit.TabIndex = 28;
             this.btnedit.Text = "ویرایش";
             this.btnedit.UseVisualStyleBackColor = true;
@@ -277,10 +277,10 @@
             // 
             // btndel
             // 
-            this.btndel.Location = new System.Drawing.Point(525, 238);
+            this.btndel.Location = new System.Drawing.Point(536, 274);
             this.btndel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btndel.Name = "btndel";
-            this.btndel.Size = new System.Drawing.Size(69, 32);
+            this.btndel.Size = new System.Drawing.Size(84, 32);
             this.btndel.TabIndex = 27;
             this.btndel.Text = "حذف";
             this.btndel.UseVisualStyleBackColor = true;

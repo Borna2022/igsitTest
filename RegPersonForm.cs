@@ -173,15 +173,17 @@ namespace igsit
             {
                 case 0:
                     b = "fprs_Name";
+                    InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(new CultureInfo("fa-IR"));
                     break;
                 case 1:
                     b = "fprs_LastName";
+                    InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(new CultureInfo("fa-IR"));
                     break;
                 case 2:
                     b = "fprs_personCode";
                     break;
                 case 3:
-                    b = "fprs_LastName";
+                    b = "fprs_VinCode";
                     break;
                 default:
                     // در صورت نیاز می‌توانید یک مقدار پیش‌فرض تعیین کنید
@@ -195,7 +197,7 @@ namespace igsit
             }
             else
             {
-                // مدیریت حالت پیش‌فرض یا خطا
+                
             }
 
         }

@@ -43,6 +43,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvregpenalty = new System.Windows.Forms.DataGridView();
+            this.btnsearch = new System.Windows.Forms.Button();
+            this.cbosearch = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtsearch = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvregpenalty)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,6 +60,7 @@
             this.btnnew.TabIndex = 38;
             this.btnnew.Text = "جدید";
             this.btnnew.UseVisualStyleBackColor = true;
+            this.btnnew.Click += new System.EventHandler(this.btnnew_Click);
             // 
             // btnsave
             // 
@@ -65,6 +71,7 @@
             this.btnsave.TabIndex = 37;
             this.btnsave.Text = "ذخیره";
             this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // btnedit
             // 
@@ -75,6 +82,7 @@
             this.btnedit.TabIndex = 36;
             this.btnedit.Text = "ویرایش";
             this.btnedit.UseVisualStyleBackColor = true;
+            this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
             // 
             // btndel
             // 
@@ -85,6 +93,7 @@
             this.btndel.TabIndex = 35;
             this.btndel.Text = "حذف";
             this.btndel.UseVisualStyleBackColor = true;
+            this.btndel.Click += new System.EventHandler(this.btndel_Click);
             // 
             // btnfirst
             // 
@@ -95,6 +104,7 @@
             this.btnfirst.TabIndex = 34;
             this.btnfirst.Text = "اولین";
             this.btnfirst.UseVisualStyleBackColor = true;
+            this.btnfirst.Click += new System.EventHandler(this.btnfirst_Click);
             // 
             // btnprevious
             // 
@@ -105,6 +115,7 @@
             this.btnprevious.TabIndex = 33;
             this.btnprevious.Text = "قبلی";
             this.btnprevious.UseVisualStyleBackColor = true;
+            this.btnprevious.Click += new System.EventHandler(this.btnprevious_Click);
             // 
             // btnnext
             // 
@@ -115,6 +126,7 @@
             this.btnnext.TabIndex = 32;
             this.btnnext.Text = "بعدی";
             this.btnnext.UseVisualStyleBackColor = true;
+            this.btnnext.Click += new System.EventHandler(this.btnnext_Click);
             // 
             // btnlast
             // 
@@ -125,12 +137,14 @@
             this.btnlast.TabIndex = 31;
             this.btnlast.Text = "آخرین";
             this.btnlast.UseVisualStyleBackColor = true;
+            this.btnlast.Click += new System.EventHandler(this.btnlast_Click);
             // 
             // txtpenaltycode
             // 
             this.txtpenaltycode.Location = new System.Drawing.Point(557, 13);
             this.txtpenaltycode.Margin = new System.Windows.Forms.Padding(4);
             this.txtpenaltycode.Name = "txtpenaltycode";
+            this.txtpenaltycode.ReadOnly = true;
             this.txtpenaltycode.Size = new System.Drawing.Size(231, 22);
             this.txtpenaltycode.TabIndex = 39;
             // 
@@ -139,6 +153,7 @@
             this.txtpenaltycost.Location = new System.Drawing.Point(557, 45);
             this.txtpenaltycost.Margin = new System.Windows.Forms.Padding(4);
             this.txtpenaltycost.Name = "txtpenaltycost";
+            this.txtpenaltycost.ReadOnly = true;
             this.txtpenaltycost.Size = new System.Drawing.Size(231, 22);
             this.txtpenaltycost.TabIndex = 40;
             // 
@@ -147,6 +162,7 @@
             this.txtpenaltydescription.Location = new System.Drawing.Point(557, 77);
             this.txtpenaltydescription.Margin = new System.Windows.Forms.Padding(4);
             this.txtpenaltydescription.Name = "txtpenaltydescription";
+            this.txtpenaltydescription.ReadOnly = true;
             this.txtpenaltydescription.Size = new System.Drawing.Size(231, 22);
             this.txtpenaltydescription.TabIndex = 41;
             // 
@@ -189,12 +205,69 @@
             this.dgvregpenalty.RowHeadersWidth = 51;
             this.dgvregpenalty.Size = new System.Drawing.Size(523, 396);
             this.dgvregpenalty.TabIndex = 45;
+            this.dgvregpenalty.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvregpenalty_CellClick);
+            // 
+            // btnsearch
+            // 
+            this.btnsearch.Location = new System.Drawing.Point(676, 231);
+            this.btnsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnsearch.Name = "btnsearch";
+            this.btnsearch.Size = new System.Drawing.Size(75, 37);
+            this.btnsearch.TabIndex = 50;
+            this.btnsearch.Text = "جستجو";
+            this.btnsearch.UseVisualStyleBackColor = true;
+            // 
+            // cbosearch
+            // 
+            this.cbosearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbosearch.FormattingEnabled = true;
+            this.cbosearch.Items.AddRange(new object[] {
+            "نام",
+            "نام خانوادگی",
+            "کد ملی",
+            "سریال کارت"});
+            this.cbosearch.Location = new System.Drawing.Point(631, 174);
+            this.cbosearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbosearch.Name = "cbosearch";
+            this.cbosearch.Size = new System.Drawing.Size(157, 24);
+            this.cbosearch.TabIndex = 49;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(793, 207);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(62, 16);
+            this.label6.TabIndex = 48;
+            this.label6.Text = "متن جستجو";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(793, 178);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(89, 16);
+            this.label7.TabIndex = 47;
+            this.label7.Text = "جستجو بر اساس";
+            // 
+            // txtsearch
+            // 
+            this.txtsearch.Location = new System.Drawing.Point(631, 203);
+            this.txtsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtsearch.Name = "txtsearch";
+            this.txtsearch.Size = new System.Drawing.Size(157, 22);
+            this.txtsearch.TabIndex = 46;
             // 
             // RegPenalty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(917, 422);
+            this.Controls.Add(this.btnsearch);
+            this.Controls.Add(this.cbosearch);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtsearch);
             this.Controls.Add(this.dgvregpenalty);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -237,5 +310,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dgvregpenalty;
+        private System.Windows.Forms.Button btnsearch;
+        private System.Windows.Forms.ComboBox cbosearch;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtsearch;
     }
 }

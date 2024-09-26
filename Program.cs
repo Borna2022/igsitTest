@@ -14,22 +14,24 @@ namespace igsit
         [STAThread]
         static void Main()
         {
-            //Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new RegPenalty());
+            ///////////////////////////////////////////////////بعد از تحویل
 
-            // نمایش فرم لاگین
-            Login loginForm = new Login();
-            if (loginForm.ShowDialog() == DialogResult.OK)
-            {
-                Application.Run(new Form1());
-            }
-            else
-            {
-                Application.Exit();
-            }
+            //Application.EnableVisualStyles();
+            //Application.SetCompatibleTextRenderingDefault(false);
+
+            //// نمایش فرم لاگین
+            //Login loginForm = new Login();
+            //if (loginForm.ShowDialog() == DialogResult.OK)
+            //{
+            //    Application.Run(new Form1());
+            //}
+            //else
+            //{
+            //    Application.Exit();
+            //}
         }
     }
 }

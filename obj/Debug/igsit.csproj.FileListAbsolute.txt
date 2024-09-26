@@ -63,3 +63,4 @@ D:\Borna\C#Projects\igsit\Repos\obj\Debug\igsit.csproj.GenerateResource.cache
 D:\Borna\C#Projects\igsit\Repos\obj\Debug\igsit.csproj.CoreCompileInputs.cache
 D:\Borna\C#Projects\igsit\Repos\obj\Debug\igsit.exe
 D:\Borna\C#Projects\igsit\Repos\obj\Debug\igsit.pdb
+D:\Borna\C#Projects\igsit\Repos\obj\Debug\igsit.Login.resources

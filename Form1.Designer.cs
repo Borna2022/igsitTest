@@ -117,27 +117,27 @@
             // 
             // btndefineperson
             // 
-            this.btndefineperson.Location = new System.Drawing.Point(554, 191);
+            this.btndefineperson.Location = new System.Drawing.Point(527, 55);
             this.btndefineperson.Name = "btndefineperson";
-            this.btndefineperson.Size = new System.Drawing.Size(173, 41);
+            this.btndefineperson.Size = new System.Drawing.Size(261, 41);
             this.btndefineperson.TabIndex = 1;
             this.btndefineperson.Text = "جدول مشخصات افراد";
             this.btndefineperson.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(554, 238);
+            this.button1.Location = new System.Drawing.Point(527, 102);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 41);
+            this.button1.Size = new System.Drawing.Size(261, 41);
             this.button1.TabIndex = 2;
             this.button1.Text = "جدول مشخصات ثبت جریمه";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(554, 285);
+            this.button2.Location = new System.Drawing.Point(527, 149);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(173, 41);
+            this.button2.Size = new System.Drawing.Size(261, 41);
             this.button2.TabIndex = 3;
             this.button2.Text = "جدول مشخصات ثبت جریمه";
             this.button2.UseVisualStyleBackColor = true;

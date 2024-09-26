@@ -38,31 +38,32 @@
             // 
             // txtuser
             // 
-            this.txtuser.Location = new System.Drawing.Point(12, 12);
+            this.txtuser.Location = new System.Drawing.Point(81, 12);
             this.txtuser.Name = "txtuser";
             this.txtuser.Size = new System.Drawing.Size(167, 22);
             this.txtuser.TabIndex = 1;
             // 
             // txtpass
             // 
-            this.txtpass.Location = new System.Drawing.Point(12, 40);
+            this.txtpass.Location = new System.Drawing.Point(81, 40);
             this.txtpass.Name = "txtpass";
             this.txtpass.Size = new System.Drawing.Size(167, 22);
             this.txtpass.TabIndex = 2;
             // 
             // btnenter
             // 
-            this.btnenter.Location = new System.Drawing.Point(62, 68);
+            this.btnenter.Location = new System.Drawing.Point(131, 68);
             this.btnenter.Name = "btnenter";
             this.btnenter.Size = new System.Drawing.Size(75, 46);
             this.btnenter.TabIndex = 3;
             this.btnenter.Text = "ورود";
             this.btnenter.UseVisualStyleBackColor = true;
+            this.btnenter.Click += new System.EventHandler(this.btnenter_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(185, 18);
+            this.label1.Location = new System.Drawing.Point(254, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 16);
             this.label1.TabIndex = 3;
@@ -71,7 +72,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(197, 43);
+            this.label2.Location = new System.Drawing.Point(266, 43);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 16);
             this.label2.TabIndex = 4;
@@ -79,9 +80,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 132);
+            this.button1.Location = new System.Drawing.Point(12, 146);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(236, 32);
+            this.button1.Size = new System.Drawing.Size(152, 32);
             this.button1.TabIndex = 5;
             this.button1.TabStop = false;
             this.button1.Text = "فراموشی رمز عبور ؟";
@@ -93,14 +94,18 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(257, 176);
+            this.ClientSize = new System.Drawing.Size(357, 190);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnenter);
             this.Controls.Add(this.txtpass);
             this.Controls.Add(this.txtuser);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -14,7 +14,7 @@ namespace igsit
 {
     public partial class RegPersonForm : Form
     {
-        SqlConnection conn = new SqlConnection();
+        SqlConnection conn; //= new SqlConnection();
         SqlCommand cmd1 = new SqlCommand();
         SqlDataAdapter da = new SqlDataAdapter();
         DataSet ds = new DataSet();
@@ -32,7 +32,7 @@ namespace igsit
 
         private void RegPersonForm_Load(object sender, EventArgs e)
         {
-            conn.ConnectionString = "Data Source=borna;Initial Catalog=igsitDBTest;Integrated Security=True;";
+            conn = DatabaseHelper.GetConnection();
             conn.Open();
             fillgrid();
         }

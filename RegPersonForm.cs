@@ -35,6 +35,7 @@ namespace igsit
             conn = DatabaseHelper.GetConnection();
             conn.Open();
             fillgrid();
+            cbosearch.Focus();
         }
         void fillgrid(string s = "select * from T_Persons")
         {

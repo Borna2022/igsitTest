@@ -156,7 +156,7 @@
             this.txtsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.Size = new System.Drawing.Size(157, 22);
-            this.txtsearch.TabIndex = 11;
+            this.txtsearch.TabIndex = 13;
             this.txtsearch.TextChanged += new System.EventHandler(this.txtsearch_TextChanged);
             this.txtsearch.Enter += new System.EventHandler(this.txtsearch_Enter);
             // 
@@ -173,7 +173,7 @@
             this.cbosearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbosearch.Name = "cbosearch";
             this.cbosearch.Size = new System.Drawing.Size(157, 24);
-            this.cbosearch.TabIndex = 14;
+            this.cbosearch.TabIndex = 12;
             this.cbosearch.SelectedIndexChanged += new System.EventHandler(this.cbosearch_SelectedIndexChanged);
             // 
             // btnsearch
@@ -182,7 +182,7 @@
             this.btnsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnsearch.Name = "btnsearch";
             this.btnsearch.Size = new System.Drawing.Size(75, 37);
-            this.btnsearch.TabIndex = 15;
+            this.btnsearch.TabIndex = 14;
             this.btnsearch.Text = "جستجو";
             this.btnsearch.UseVisualStyleBackColor = true;
             this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
@@ -197,6 +197,7 @@
             this.dgvtpersons.RowTemplate.Height = 24;
             this.dgvtpersons.Size = new System.Drawing.Size(489, 325);
             this.dgvtpersons.TabIndex = 16;
+            this.dgvtpersons.TabStop = false;
             this.dgvtpersons.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvtpersons_CellClick);
             // 
             // btnlast
@@ -205,7 +206,7 @@
             this.btnlast.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnlast.Name = "btnlast";
             this.btnlast.Size = new System.Drawing.Size(69, 32);
-            this.btnlast.TabIndex = 23;
+            this.btnlast.TabIndex = 11;
             this.btnlast.Text = "آخرین";
             this.btnlast.UseVisualStyleBackColor = true;
             this.btnlast.Click += new System.EventHandler(this.btnlast_Click);
@@ -216,7 +217,7 @@
             this.btnnext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnnext.Name = "btnnext";
             this.btnnext.Size = new System.Drawing.Size(69, 32);
-            this.btnnext.TabIndex = 24;
+            this.btnnext.TabIndex = 10;
             this.btnnext.Text = "بعدی";
             this.btnnext.UseVisualStyleBackColor = true;
             this.btnnext.Click += new System.EventHandler(this.btnnext_Click);
@@ -227,7 +228,7 @@
             this.btnfirst.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnfirst.Name = "btnfirst";
             this.btnfirst.Size = new System.Drawing.Size(69, 32);
-            this.btnfirst.TabIndex = 26;
+            this.btnfirst.TabIndex = 8;
             this.btnfirst.Text = "اولین";
             this.btnfirst.UseVisualStyleBackColor = true;
             this.btnfirst.Click += new System.EventHandler(this.btnfirst_Click);
@@ -238,7 +239,7 @@
             this.btnprevious.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnprevious.Name = "btnprevious";
             this.btnprevious.Size = new System.Drawing.Size(69, 32);
-            this.btnprevious.TabIndex = 25;
+            this.btnprevious.TabIndex = 9;
             this.btnprevious.Text = "قبلی";
             this.btnprevious.UseVisualStyleBackColor = true;
             this.btnprevious.Click += new System.EventHandler(this.btnprevious_Click);
@@ -249,7 +250,7 @@
             this.btnnew.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnnew.Name = "btnnew";
             this.btnnew.Size = new System.Drawing.Size(84, 32);
-            this.btnnew.TabIndex = 30;
+            this.btnnew.TabIndex = 5;
             this.btnnew.Text = "جدید";
             this.btnnew.UseVisualStyleBackColor = true;
             this.btnnew.Click += new System.EventHandler(this.btnnew_Click);
@@ -261,7 +262,7 @@
             this.btnsave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(84, 32);
-            this.btnsave.TabIndex = 29;
+            this.btnsave.TabIndex = 6;
             this.btnsave.Text = "ذخیره";
             this.btnsave.UseVisualStyleBackColor = true;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
@@ -272,7 +273,7 @@
             this.btnedit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnedit.Name = "btnedit";
             this.btnedit.Size = new System.Drawing.Size(106, 32);
-            this.btnedit.TabIndex = 28;
+            this.btnedit.TabIndex = 7;
             this.btnedit.Text = "ویرایش";
             this.btnedit.UseVisualStyleBackColor = true;
             this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
@@ -284,6 +285,7 @@
             this.btndel.Name = "btndel";
             this.btndel.Size = new System.Drawing.Size(84, 32);
             this.btndel.TabIndex = 27;
+            this.btndel.TabStop = false;
             this.btndel.Text = "حذف";
             this.btndel.UseVisualStyleBackColor = true;
             this.btndel.Click += new System.EventHandler(this.btndel_Click);

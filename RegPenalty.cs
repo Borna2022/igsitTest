@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Xml.Linq;
+using System.Globalization;
 
 namespace igsit
 {
@@ -30,6 +31,7 @@ namespace igsit
             conn = DatabaseHelper.GetConnection();
             conn.Open();
             fillgrid();
+            cbosearch.Focus();
 
         }
         void fillgrid(string s = "select * from T_Penalty")
@@ -152,6 +154,59 @@ namespace igsit
 
                 btnedit.Text = "ویرایش";
             }
+        }
+
+        private void cbosearch_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtsearch.Focus();
+            txtsearch.Clear();
+        }
+
+        private void txtsearch_TextChanged(object sender, EventArgs e)
+        {
+            btnsearch_Click(null, null);
+        }
+
+        private void btnsearch_Click(object sender, EventArgs e)
+        {
+            string b = string.Empty;
+            switch (cbosearch.SelectedIndex)
+            {
+                case 0:
+                    b = "fpnl_PenaltyCode";
+                    InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(new CultureInfo("fa-IR"));
+                    break;
+                case 1:
+                    b = "fpnl_PenaltyCost";
+                    InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(new CultureInfo("fa-IR"));
+                    break;
+                case 2:
+                    b = "fpnl_PenaltyDescription";
+                    break;
+                default:
+                    // در صورت نیاز می‌توانید یک مقدار پیش‌فرض تعیین کنید
+                    break;
+            }
+
+            if (!string.IsNullOrEmpty(b))
+            {
+                string query = $"select * from  T_Penalty where {b} like '{txtsearch.Text}%'";
+                fillgrid(query);
+            }
+            else
+            {
+
+            }
+        }
+
+        private void txtsearch_Enter(object sender, EventArgs e)
+        {
+            InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(new CultureInfo("fa-IR"));
+        }
+
+        private void txtpenaltydescription_Enter(object sender, EventArgs e)
+        {
+            InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(new CultureInfo("fa-IR"));
         }
     }
 }

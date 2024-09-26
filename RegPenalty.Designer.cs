@@ -57,7 +57,7 @@
             this.btnnew.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnnew.Name = "btnnew";
             this.btnnew.Size = new System.Drawing.Size(87, 36);
-            this.btnnew.TabIndex = 38;
+            this.btnnew.TabIndex = 7;
             this.btnnew.Text = "جدید";
             this.btnnew.UseVisualStyleBackColor = true;
             this.btnnew.Click += new System.EventHandler(this.btnnew_Click);
@@ -68,7 +68,7 @@
             this.btnsave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(87, 36);
-            this.btnsave.TabIndex = 37;
+            this.btnsave.TabIndex = 8;
             this.btnsave.Text = "ذخیره";
             this.btnsave.UseVisualStyleBackColor = true;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
@@ -79,7 +79,7 @@
             this.btnedit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnedit.Name = "btnedit";
             this.btnedit.Size = new System.Drawing.Size(87, 36);
-            this.btnedit.TabIndex = 36;
+            this.btnedit.TabIndex = 9;
             this.btnedit.Text = "ویرایش";
             this.btnedit.UseVisualStyleBackColor = true;
             this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
@@ -90,7 +90,8 @@
             this.btndel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btndel.Name = "btndel";
             this.btndel.Size = new System.Drawing.Size(87, 36);
-            this.btndel.TabIndex = 35;
+            this.btndel.TabIndex = 0;
+            this.btndel.TabStop = false;
             this.btndel.Text = "حذف";
             this.btndel.UseVisualStyleBackColor = true;
             this.btndel.Click += new System.EventHandler(this.btndel_Click);
@@ -101,7 +102,7 @@
             this.btnfirst.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnfirst.Name = "btnfirst";
             this.btnfirst.Size = new System.Drawing.Size(87, 36);
-            this.btnfirst.TabIndex = 34;
+            this.btnfirst.TabIndex = 10;
             this.btnfirst.Text = "اولین";
             this.btnfirst.UseVisualStyleBackColor = true;
             this.btnfirst.Click += new System.EventHandler(this.btnfirst_Click);
@@ -112,7 +113,7 @@
             this.btnprevious.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnprevious.Name = "btnprevious";
             this.btnprevious.Size = new System.Drawing.Size(87, 36);
-            this.btnprevious.TabIndex = 33;
+            this.btnprevious.TabIndex = 11;
             this.btnprevious.Text = "قبلی";
             this.btnprevious.UseVisualStyleBackColor = true;
             this.btnprevious.Click += new System.EventHandler(this.btnprevious_Click);
@@ -123,7 +124,7 @@
             this.btnnext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnnext.Name = "btnnext";
             this.btnnext.Size = new System.Drawing.Size(87, 36);
-            this.btnnext.TabIndex = 32;
+            this.btnnext.TabIndex = 12;
             this.btnnext.Text = "بعدی";
             this.btnnext.UseVisualStyleBackColor = true;
             this.btnnext.Click += new System.EventHandler(this.btnnext_Click);
@@ -134,7 +135,7 @@
             this.btnlast.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnlast.Name = "btnlast";
             this.btnlast.Size = new System.Drawing.Size(87, 36);
-            this.btnlast.TabIndex = 31;
+            this.btnlast.TabIndex = 13;
             this.btnlast.Text = "آخرین";
             this.btnlast.UseVisualStyleBackColor = true;
             this.btnlast.Click += new System.EventHandler(this.btnlast_Click);
@@ -146,7 +147,7 @@
             this.txtpenaltycode.Name = "txtpenaltycode";
             this.txtpenaltycode.ReadOnly = true;
             this.txtpenaltycode.Size = new System.Drawing.Size(231, 22);
-            this.txtpenaltycode.TabIndex = 39;
+            this.txtpenaltycode.TabIndex = 1;
             // 
             // txtpenaltycost
             // 
@@ -155,7 +156,7 @@
             this.txtpenaltycost.Name = "txtpenaltycost";
             this.txtpenaltycost.ReadOnly = true;
             this.txtpenaltycost.Size = new System.Drawing.Size(231, 22);
-            this.txtpenaltycost.TabIndex = 40;
+            this.txtpenaltycost.TabIndex = 2;
             // 
             // txtpenaltydescription
             // 
@@ -164,7 +165,8 @@
             this.txtpenaltydescription.Name = "txtpenaltydescription";
             this.txtpenaltydescription.ReadOnly = true;
             this.txtpenaltydescription.Size = new System.Drawing.Size(231, 22);
-            this.txtpenaltydescription.TabIndex = 41;
+            this.txtpenaltydescription.TabIndex = 3;
+            this.txtpenaltydescription.Enter += new System.EventHandler(this.txtpenaltydescription_Enter);
             // 
             // lbl
             // 
@@ -205,6 +207,7 @@
             this.dgvregpenalty.RowHeadersWidth = 51;
             this.dgvregpenalty.Size = new System.Drawing.Size(523, 396);
             this.dgvregpenalty.TabIndex = 45;
+            this.dgvregpenalty.TabStop = false;
             this.dgvregpenalty.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvregpenalty_CellClick);
             // 
             // btnsearch
@@ -213,24 +216,25 @@
             this.btnsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnsearch.Name = "btnsearch";
             this.btnsearch.Size = new System.Drawing.Size(75, 37);
-            this.btnsearch.TabIndex = 50;
+            this.btnsearch.TabIndex = 6;
             this.btnsearch.Text = "جستجو";
             this.btnsearch.UseVisualStyleBackColor = true;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
             // 
             // cbosearch
             // 
             this.cbosearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbosearch.FormattingEnabled = true;
             this.cbosearch.Items.AddRange(new object[] {
-            "نام",
-            "نام خانوادگی",
-            "کد ملی",
-            "سریال کارت"});
+            "کد جریمه",
+            "مبلغ جریمه",
+            "شرح جریمه"});
             this.cbosearch.Location = new System.Drawing.Point(631, 174);
             this.cbosearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbosearch.Name = "cbosearch";
             this.cbosearch.Size = new System.Drawing.Size(157, 24);
-            this.cbosearch.TabIndex = 49;
+            this.cbosearch.TabIndex = 4;
+            this.cbosearch.SelectedIndexChanged += new System.EventHandler(this.cbosearch_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -256,7 +260,9 @@
             this.txtsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.Size = new System.Drawing.Size(157, 22);
-            this.txtsearch.TabIndex = 46;
+            this.txtsearch.TabIndex = 5;
+            this.txtsearch.TextChanged += new System.EventHandler(this.txtsearch_TextChanged);
+            this.txtsearch.Enter += new System.EventHandler(this.txtsearch_Enter);
             // 
             // RegPenalty
             // 

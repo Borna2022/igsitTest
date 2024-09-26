@@ -245,7 +245,7 @@
             // 
             // btnnew
             // 
-            this.btnnew.Location = new System.Drawing.Point(716, 238);
+            this.btnnew.Location = new System.Drawing.Point(756, 240);
             this.btnnew.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnnew.Name = "btnnew";
             this.btnnew.Size = new System.Drawing.Size(84, 32);
@@ -257,7 +257,7 @@
             // btnsave
             // 
             this.btnsave.Enabled = false;
-            this.btnsave.Location = new System.Drawing.Point(626, 238);
+            this.btnsave.Location = new System.Drawing.Point(666, 240);
             this.btnsave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(84, 32);
@@ -268,10 +268,10 @@
             // 
             // btnedit
             // 
-            this.btnedit.Location = new System.Drawing.Point(536, 238);
+            this.btnedit.Location = new System.Drawing.Point(554, 240);
             this.btnedit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnedit.Name = "btnedit";
-            this.btnedit.Size = new System.Drawing.Size(84, 32);
+            this.btnedit.Size = new System.Drawing.Size(106, 32);
             this.btnedit.TabIndex = 28;
             this.btnedit.Text = "ویرایش";
             this.btnedit.UseVisualStyleBackColor = true;
@@ -279,7 +279,7 @@
             // 
             // btndel
             // 
-            this.btndel.Location = new System.Drawing.Point(536, 274);
+            this.btndel.Location = new System.Drawing.Point(554, 276);
             this.btndel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btndel.Name = "btndel";
             this.btndel.Size = new System.Drawing.Size(84, 32);

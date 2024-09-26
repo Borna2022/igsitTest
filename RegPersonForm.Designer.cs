@@ -251,7 +251,7 @@
             this.btnnew.Name = "btnnew";
             this.btnnew.Size = new System.Drawing.Size(84, 32);
             this.btnnew.TabIndex = 5;
-            this.btnnew.Text = "جدید";
+            this.btnnew.Text = "new";
             this.btnnew.UseVisualStyleBackColor = true;
             this.btnnew.Click += new System.EventHandler(this.btnnew_Click);
             // 

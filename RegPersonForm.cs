@@ -37,6 +37,7 @@ namespace igsit
             fillgrid();
             cbosearch.Focus();
         }
+
         void fillgrid(string s = "select * from T_Persons")
         {
             cmd1.CommandText = s;
@@ -77,16 +78,18 @@ namespace igsit
             cr.Position++;
         }
 
-        private void btnnew_Click(object sender, EventArgs e)
+        public void btnnew_Click(object sender, EventArgs e)
         {
-            txtpersoncode.ReadOnly = false;
-            txtname.ReadOnly = false;
-            txtlastname.ReadOnly = false;
-            txtvin.ReadOnly = false;
             txtpersoncode.Text = "";
             txtname.Text = "";
             txtlastname.Text = "";
             txtvin.Text = "";
+
+            txtpersoncode.ReadOnly = false;
+            txtname.ReadOnly = false;
+            txtlastname.ReadOnly = false;
+            txtvin.ReadOnly = false;
+
             btnnew.Enabled = false;
             btnsave.Enabled = true;
             txtpersoncode.Focus();
@@ -271,5 +274,8 @@ namespace igsit
             txtsearch.Focus();
             txtsearch.Clear();
         }
+
+
+
     }
 }

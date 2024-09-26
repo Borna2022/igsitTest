@@ -69,6 +69,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="igsitDBTestDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>igsitDBTestDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +125,17 @@
     <EmbeddedResource Include="RegPersonForm.resx">
       <DependentUpon>RegPersonForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="igsitDBTestDataSet.xsc">
+      <DependentUpon>igsitDBTestDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="igsitDBTestDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>igsitDBTestDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="igsitDBTestDataSet.xss">
+      <DependentUpon>igsitDBTestDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

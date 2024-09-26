@@ -89,21 +89,40 @@ namespace igsit
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-            SqlCommand c1 = new SqlCommand();
-            c1.CommandText = "insert into T_Penalty values(@p1,@p2,@p3)";
-            c1.Parameters.AddWithValue("p1", txtpenaltycode.Text);
-            c1.Parameters.AddWithValue("p2", txtpenaltycost.Text);
-            c1.Parameters.AddWithValue("p3", txtpenaltydescription.Text);
+            using (SqlCommand c1 = new SqlCommand())
+            {
+                try
+                {
+                    c1.CommandText = "insert into T_Penalty values(@p1,@p2,@p3)";
+                    c1.Parameters.AddWithValue("p1", txtpenaltycode.Text);
+                    c1.Parameters.AddWithValue("p2", txtpenaltycost.Text);
+                    c1.Parameters.AddWithValue("p3", txtpenaltydescription.Text);
 
-            c1.Connection = conn;
-            c1.ExecuteNonQuery();
-            btnsave.Enabled = false;
-            btnnew.Enabled = true;
-            txtpenaltycode.ReadOnly = true;
-            txtpenaltycost.ReadOnly = true;
-            txtpenaltydescription.ReadOnly = true;
+                    c1.Connection = conn;
+                    c1.ExecuteNonQuery();
+                    btnsave.Enabled = false;
+                    btnnew.Enabled = true;
+                    txtpenaltycode.ReadOnly = true;
+                    txtpenaltycost.ReadOnly = true;
+                    txtpenaltydescription.ReadOnly = true;
 
-            fillgrid();
+                    fillgrid();
+
+                }
+                catch (SqlException sqlEx)
+                {
+                    MessageBox.Show("Database error: " + sqlEx.Message);
+                }
+                catch (InvalidOperationException invOpEx)
+                {
+                    MessageBox.Show("Invalid operation: " + invOpEx.Message);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An unexpected error occurred: " + ex.Message);
+                }
+            }
+
         }
 
         private void btndel_Click(object sender, EventArgs e)

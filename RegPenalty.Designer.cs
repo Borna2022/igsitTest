@@ -64,6 +64,7 @@
             // 
             // btnsave
             // 
+            this.btnsave.Enabled = false;
             this.btnsave.Location = new System.Drawing.Point(734, 324);
             this.btnsave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnsave.Name = "btnsave";

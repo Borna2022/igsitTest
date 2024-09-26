@@ -94,21 +94,40 @@ namespace igsit
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-            SqlCommand c1 = new SqlCommand();
-            c1.CommandText = "insert into T_Persons values(@p1,@p2,@p3,@p4)";
-            c1.Parameters.AddWithValue("p1", txtpersoncode.Text);
-            c1.Parameters.AddWithValue("p2", txtname.Text);
-            c1.Parameters.AddWithValue("p3", txtlastname.Text);
-            c1.Parameters.AddWithValue("p4", txtvin.Text);
-            c1.Connection = conn;
-            c1.ExecuteNonQuery();
-            btnsave.Enabled = false;
-            btnnew.Enabled = true;
-            txtpersoncode.ReadOnly = true;
-            txtname.ReadOnly = true;
-            txtlastname.ReadOnly = true;
-            txtvin.ReadOnly = true;
-            fillgrid();
+            using (SqlCommand c1 = new SqlCommand())
+            {
+                try
+                {
+                    c1.CommandText = "insert into T_Persons values(@p1,@p2,@p3,@p4)";
+                    c1.Parameters.AddWithValue("p1", txtpersoncode.Text);
+                    c1.Parameters.AddWithValue("p2", txtname.Text);
+                    c1.Parameters.AddWithValue("p3", txtlastname.Text);
+                    c1.Parameters.AddWithValue("p4", txtvin.Text);
+                    c1.Connection = conn;
+                    c1.ExecuteNonQuery();
+                    btnsave.Enabled = false;
+                    btnnew.Enabled = true;
+                    txtpersoncode.ReadOnly = true;
+                    txtname.ReadOnly = true;
+                    txtlastname.ReadOnly = true;
+                    txtvin.ReadOnly = true;
+                    fillgrid();
+
+                }
+                catch (SqlException sqlEx)
+                {
+                    MessageBox.Show("Database error: " + sqlEx.Message);
+                }
+                catch (InvalidOperationException invOpEx)
+                {
+                    MessageBox.Show("Invalid operation: " + invOpEx.Message);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An unexpected error occurred: " + ex.Message);
+                }
+            }
+
         }
 
 

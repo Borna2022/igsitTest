@@ -59,5 +59,17 @@ namespace igsit
             }
 
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            txtpass.PasswordChar = '●';
+        }
+
+
+
+        //private void txtpass_MouseHover(object sender, EventArgs e)
+        //{
+        //    txtpass.PasswordChar = '\0';
+        //}
     }
 }

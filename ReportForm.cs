@@ -16,5 +16,11 @@ namespace igsit
         {
             InitializeComponent();
         }
+
+        private void ReportForm_Load(object sender, EventArgs e)
+        {
+
+            this.reportViewer1.RefreshReport();
+        }
     }
 }

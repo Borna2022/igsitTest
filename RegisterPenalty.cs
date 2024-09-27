@@ -66,6 +66,7 @@ namespace igsit
         private void btnregister_Click(object sender, EventArgs e)
         {
             string personCode = txtsearch.Text;
+            string PenaltyCode =txtpenaltycode.Text;
 
             using (SqlCommand checkCmd = new SqlCommand("SELECT COUNT(*) FROM T_Persons WHERE fprs_personCode = @personCode", conn))
             {
@@ -75,9 +76,10 @@ namespace igsit
                 if (count > 0)
                 {
                     // کد ملی در جدول وجود دارد، ثبت کنید
-                    using (SqlCommand insertCmd = new SqlCommand("INSERT INTO T_PenaltyRegister (fprg_personCode) VALUES (@personCode)", conn))
+                    using (SqlCommand insertCmd = new SqlCommand("INSERT INTO T_PenaltyRegister (fprg_personCode,fprg_PenaltyCode) VALUES (@personCode,@PenaltyCode)", conn))
                     {
                         insertCmd.Parameters.AddWithValue("@personCode", personCode);
+                        insertCmd.Parameters.AddWithValue("@PenaltyCode", PenaltyCode);
                         insertCmd.ExecuteNonQuery();
                         MessageBox.Show("کد ملی با موفقیت ثبت شد.");
                     }

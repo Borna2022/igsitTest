@@ -16,5 +16,13 @@ namespace igsit
         {
             InitializeComponent();
         }
+
+        private void ReportForm1_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'igsitDBTestDataSet1.T_Persons' table. You can move, or remove it, as needed.
+            this.t_PersonsTableAdapter.Fill(this.igsitDBTestDataSet1.T_Persons);
+
+            this.reportViewer1.RefreshReport();
+        }
     }
 }

@@ -16,7 +16,7 @@ namespace igsit
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PenaltyRegisterForm());
+            Application.Run(new ReportForm1());
             ///////////////////////////////////////////////////بعد از تحویل
 
             //Application.EnableVisualStyles();

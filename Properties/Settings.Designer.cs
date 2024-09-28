@@ -42,5 +42,15 @@ namespace igsit.Properties {
                 return ((string)(this["igsitDBTestConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-HOJA8V1;Initial Catalog=igsitDBTest;Integrated Security=True")]
+        public string igsitDBTestConnectionString1 {
+            get {
+                return ((string)(this["igsitDBTestConnectionString1"]));
+            }
+        }
     }
 }

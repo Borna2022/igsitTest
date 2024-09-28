@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace igsit
 {
-    public partial class ReportForm : Form
+    public partial class ReportForm1 : Form
     {
-        public ReportForm()
+        public ReportForm1()
         {
             InitializeComponent();
-        }
-
-        private void ReportForm_Load(object sender, EventArgs e)
-        {
-
-            this.reportViewer1.RefreshReport();
         }
     }
 }

@@ -125,11 +125,11 @@
     <Compile Include="RegPersonForm.Designer.cs">
       <DependentUpon>RegPersonForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReportForm.cs">
+    <Compile Include="ReportForm1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportForm.Designer.cs">
-      <DependentUpon>ReportForm.cs</DependentUpon>
+    <Compile Include="ReportForm1.Designer.cs">
+      <DependentUpon>ReportForm1.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -156,10 +156,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegPersonForm.resx">
       <DependentUpon>RegPersonForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Report1.rdlc" />
-    <EmbeddedResource Include="ReportForm.resx">
-      <DependentUpon>ReportForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="da.xsc">
       <DependentUpon>da.xsd</DependentUpon>

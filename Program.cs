@@ -16,7 +16,7 @@ namespace igsit
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ReportForm1());
+            Application.Run(new Form2TestDataset());
             ///////////////////////////////////////////////////بعد از تحویل
 
             //Application.EnableVisualStyles();

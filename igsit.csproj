@@ -83,11 +83,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseHelper.cs" />
+    <Compile Include="DataTest.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataTest.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2TestDataset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2TestDataset.Designer.cs">
+      <DependentUpon>Form2TestDataset.cs</DependentUpon>
     </Compile>
     <Compile Include="igsitDBTestDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -98,6 +109,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>igsitDBTestDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="igsitDBTestDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>igsitDBTestDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -135,6 +151,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form2TestDataset.resx">
+      <DependentUpon>Form2TestDataset.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +180,17 @@
     <EmbeddedResource Include="ReportForm1.resx">
       <DependentUpon>ReportForm1.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DataTest.xsc">
+      <DependentUpon>DataTest.xsd</DependentUpon>
+    </None>
+    <None Include="DataTest.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataTest.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataTest.xss">
+      <DependentUpon>DataTest.xsd</DependentUpon>
+    </None>
     <None Include="igsitDBTestDataSet.xsc">
       <DependentUpon>igsitDBTestDataSet.xsd</DependentUpon>
     </None>
@@ -182,6 +212,17 @@
     </None>
     <None Include="igsitDBTestDataSet1.xss">
       <DependentUpon>igsitDBTestDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="igsitDBTestDataSet2.xsc">
+      <DependentUpon>igsitDBTestDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="igsitDBTestDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>igsitDBTestDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="igsitDBTestDataSet2.xss">
+      <DependentUpon>igsitDBTestDataSet2.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
